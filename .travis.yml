@@ -1,3 +1,4 @@
+language: node_js
 script:
  - chmod a+x autogen.sh
  - ./autogen.sh
