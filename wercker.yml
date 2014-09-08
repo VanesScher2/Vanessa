@@ -1,6 +1,19 @@
 box: wercker/default
+packages:
+  - llvm@3.0
+  - clang@3.0
+  - gcc@4.6.3
+  - binutils@2.22
+  - automake@1.11.3
 build:
   steps:
-    -  script:
-        name: some simple test!
-        code: |-
+  - script:
+    name: some simple test!
+    code: |-
+      sudo apt-get update -y
+      sudo apt-get install binfmt-support -y
+      sudo apt-get install build-essential -y
+      sudo apt-get install binutils gcc -y
+      sudo apt-get install automake -y
+      sudo apt-get install libllvm3.0 llvm-3.0 llvm-3.0-runtime llvm-3.0-dev llvm-3.0-doc -y
+      sudo apt-get install clang libclang-dev -y
