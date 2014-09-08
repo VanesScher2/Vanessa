@@ -16,7 +16,7 @@ Version 2.3.1 - Jun 18, 2013
 
 Version 2.3 - Jun 12, 2013
 
-- Add support for the Stratum mining protocol
+- Add support for the Stratum mining protocol1
 - Automatically switch to Stratum if the mining server supports
   the X-Stratum extension, unless --no-stratum is used
 - Set CPU affinity on FreeBSD (lye)
