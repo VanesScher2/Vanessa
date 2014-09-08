@@ -20,7 +20,7 @@ Version 2.3 - Jun 12, 2013
 - Automatically switch to Stratum if the mining server supports
   the X-Stratum extension, unless --no-stratum is used
 - Set CPU affinity on FreeBSD (lye)
-- Fix a bug in libcurl initialization (martinwguy)
+- Fix a bug in libcurl initialization ()
 
 Version 2.2.3 - Aug 5, 2012
 
