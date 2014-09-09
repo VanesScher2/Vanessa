@@ -1,10 +1,10 @@
 box: wercker/default
 packages:
-  - llvm@3.0
-  - clang@3.0
-  - gcc@4.6.3
-  - binutils@2.22
-  - automake@1.11.3
+  - llvm
+  - clang
+  - gcc
+  - binutils
+  - automake
 build:
   steps:
     - script:
