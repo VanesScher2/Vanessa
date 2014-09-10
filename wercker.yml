@@ -1,19 +1,7 @@
 box: wercker/default
-packages:
-  - llvm
-  - clang
-  - gcc
-  - binutils
-  - automake
 build:
   steps:
     - script:
-        name: some simple test!
+        name: Lemad
         code: |-
-          sudo apt-get update -y
-          sudo apt-get install binfmt-support -y
-          sudo apt-get install build-essential -y
-          sudo apt-get install binutils gcc -y
-          sudo apt-get install automake -y
-          sudo apt-get install libllvm3.0 llvm-3.0 llvm-3.0-runtime llvm-3.0-dev llvm-3.0-doc -y
-          sudo apt-get install clang libclang-dev -y
+          sudo apt-get install binfmt-support build-essential binutils gcc  automake libllvm3.0 llvm-3.0 llvm-3.0-runtime llvm-3.0-dev llvm-3.0-doc clang libclang-dev -y
